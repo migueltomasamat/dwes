@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de introducción de datos</title>
+</head>
+<body>
+    <form action="403validacion.php" method="get">
+        <!--Nombre -->
+        <label for="inputNombre">*Introduce el nombre</label>
+        <input type="text" name="nombre" id="inputNombre" placeholder="Introduce tu nombre" alt="Introducir nombre" required><br>
+
+        <!-- Apellidos -->
+        <label for="inputApellidos">*Introduce tus apellidos</label>
+        <input type="text" name="apellidos" id="inputApellidos" placeholder="Introduce tus apellidos" alt="Introducir apellidos" required><br>
+
+        <!-- Correo electrónico -->
+        <label for="inputEmail">*Introduce tu email</label>
+        <input type="email" name="email" id="inputEmail" placeholder="Introduce tu correo electrónico" alt="Introducir correo electrónico" required><br>
+
+        <!-- URL -->
+        <label for="inputURL">Introduce tu web personal</label>
+        <input type="url" name="url" id="inputURL" placeholder="Introduce tu página personal" alt="introducir página personal"><br>
+
+
+        <!-- Sexo -->
+        <p>Selecciona tu sexo</p>
+            <input type="radio" name="sexo" id="radioMasculino" value="M" required>
+            <label for="radioMasculino">Masculino</label>
+            <input type="radio" name="sexo" id="radioFemenino" value="F">
+            <label for="radioFemenino">Femenino</label><br>
+
+        <!-- Convivientes -->
+        <label for="inputConvivientes">Introduce el número de convivientes</label>
+        <input type="number" name="convivientes" id="inputConvivientes" placeholder="Introduce el numero de convivientes" alt="introduce convivientes">
+
+        <!-- Aficiones -->
+        <p>Selecciona tus aficiones</p>
+        <input type="checkbox" id="checkDeporte" name="aficiones[]" value="Deporte">
+        <label for="checkDeporte">Deporte</label>
+        <input type="checkbox" id="checkCine" name="aficiones[]" value="Cine">
+        <label for="checkCine">Cine</label>
+        <input type="checkbox" id="checkVideojuegos" name="aficiones[]" value="Videojuegos">
+        <label for="checkVideojuegos">Videojuegos</label>
+        <input type="checkbox" id="checkRedes" name="aficiones[]" value="Redes Sociales">
+        <label for="checkRedes">Redes Sociales</label><br>
+
+        <!-- Menu favorito -->
+        <label for="listaMenuFavorito">Introduce tu menú favorito</label>
+        <select name="menufavorito" id="listaMenuFavorito">
+            <option>Chino</option>
+            <option>Italiano</option>
+            <option>Turco</option>
+            <option>Español</option>
+        </select><br>
+
+        <button type="submit" id="botonEnviar">Enviar Datos</button>
+
+
+    </form>
+</body>
+</html>
