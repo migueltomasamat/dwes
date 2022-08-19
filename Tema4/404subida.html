@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Subir archivo servidor</title>
+</head>
+<body>
+
+<form action="404subida.php" method="post" enctype="multipart/form-data">
+
+    <label for="inputFichero">Selecciona el fichero:</label>
+    <input name="fichero" id="inputFichero" type="file">
+
+    <!--Anchura-->
+    <label for="inputAnchura">Introduce la anchura:</label>
+    <input type="number" id="inputAnchura" name="anchura" placeholder="Introduce la anchura" alt="introducir anchura">
+
+    <!--Altura-->
+    <label for="inputAltura">Introduce la altura:</label>
+    <input type="number" id="inputAltura" name="altura" placeholder="Introduce la altura" alt="introducir altura">
+
+    <input type="submit" name="subir" id="btSubir" value="subir">
+</form>
+
+</body>
+</html>
