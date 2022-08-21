@@ -6,4 +6,4 @@
  */
 session_start();
 session_destroy();
-header("refresh:0;url=410index.php");
+header("refresh:0;url=415index.php");

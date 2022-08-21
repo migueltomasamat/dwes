@@ -40,6 +40,18 @@ class PlantillaHTML
                 <body>";
     }
 
+    public function insertarMenuOpciones(array $opciones):string{
+
+        $salida= "<ul style='list-style: none;display:inline;'>";
+            foreach ($opciones as $clave =>$valor){
+                $salida.="<li style='float:left;'><a style='display: block;padding: 14px 16px;' href='$valor'>$clave</a></li>";
+            }
+
+        $salida.="</ul>";
+        return $salida;
+
+    }
+
     public function cerrarCuerpo():string{
         return "</body>";
     }
@@ -48,10 +60,10 @@ class PlantillaHTML
         return "<form action=$action method=$metodo>
 
             <label for='inputUsuario'>Introduce tu usuario</label>
-            <input type='text' name='usuario' id='inputUsuario' placholder='Introduce tu usuario' alt='introducir usuario'>
+            <input type='text' name='usuario' id='inputUsuario' placeholder='Introduce tu usuario' alt='introducir usuario'>
 
             <label for='inputContrasenya'>Introduce tu contraseña</label>
-            <input type='password' name='contrasenya' id='inputContrasenya' placeholder='Introduce tu contraseña' var='introducir contrasenya'> 
+            <input type='password' name='contrasenya' id='inputContrasenya' placeholder='Introduce tu contraseña' alt='introducir contrasenya'> 
             
             <button type='submit'>Acceder</button>            
             </form>
